@@ -1,3 +1,3 @@
 ## Cafer Poyrazoğlu
 
-[Page 1'e git](./page1.md).
+[Link to another page](./another-page.html).
