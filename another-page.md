@@ -4,6 +4,10 @@ layout: default
 
 ## Welcome to another page
 
-_yay_
+<section class="bg-dark">
+  <div class="text-center">
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
 
-[back](./)
+{{ content }}
