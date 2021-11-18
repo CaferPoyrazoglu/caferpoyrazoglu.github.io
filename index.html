@@ -29,52 +29,29 @@ layout: home
 
 	width: 0;
 }
-.icon-button:hover span {
-	width: 3.6rem;
-	height: 3.6rem;
-	border-radius: 3.6rem;
-	margin: -1.8rem;
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+  background:#3B5999;
 }
-.twitter span {
-	background-color: #4099ff;
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+  background:#46C1F6;
 }
-.facebook span {
-	background-color: #3B5998;
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+  background:#333;
 }
-.google-plus span {
-	background-color: #db5a3c;
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before{
+  background:#de463b;
 }
 
-/* Icons */
-.icon-button i {
-	background: none;
-	color: white;
-	height: 3.6rem;
-	left: 0;
-	line-height: 3.6rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 3.6rem;
-	z-index: 10;
-}
-.icon-button .icon-twitter {
-	color: #4099ff;
-}
-.icon-button .icon-facebook {
-	color: #3B5998;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
-}
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus {
-	color: white;
-}
+
 
   </style>
 </head>
@@ -88,9 +65,27 @@ layout: home
 
     <br>
 
-<a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+
+     <div class="wrapper">
+    <div class="icon facebook">
+      <div class="tooltip">Facebook</div>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </div>
+  
+    <div class="icon twitter">
+      <div class="tooltip">Twitter</div>
+      <span><i class="fab fa-twitter"></i></span>
+    </div>
+<div class="icon github">
+      <div class="tooltip">github</div>
+      <span><i class="fab fa-github"></i></span>
+    </div>
+<div class="icon youtube">
+      <div class="tooltip">YouTube</div>
+      <span><i class="fab fa-youtube"></i></span>
+    </div>
+</div>
 
     
 
