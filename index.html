@@ -28,90 +28,35 @@ layout: home
 
     }
 
+html {
+	font-size: 20px;
+}
+body {
+	background-color: #ccc;
+	padding: 50px;
+	text-align: center;
+}
 
-.wrapper{
-  display:inline-flex;
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
 }
-.wrapper .icon{
-  margin: 0 20px;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  position: relative;
-  z-index:2;
-}
-.wrapper .icon span{
-  position:relative;
-  z-index:2;
-  height: 60px;
-  width: 60px;
-  display:block;
-  background: #fff;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-  border-radius:50%;
-  text-align:center;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.wrapper .icon span i{
-  font-size:25px;
-  line-height:60px;
-}
-.wrapper .icon .tooltip{
-  position:absolute;
-  top:0px;
-  background: #fff;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-  font-size: 20px;
-  padding: 10px 18px;
-  border-radius: 25px;
-  color:white;
-  opacity:0;
-  pointer-events: none;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.wrapper .icon:hover .tooltip{
-  opacity:1;
-  pointer-events: auto;
-  top:-70px;
-}
-.wrapper .icon .tooltip:before{
-  position:absolute;
-  content:"";
-  height:15px;
-  width:15px;
-  bottom:-8px;
-  left:50%;
-  transform: translateX(-50%) rotate(45deg);
-}
-.wrapper .icon:hover span,
-.wrapp .icon:hover .tooltip{
-  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-}
-.wrapper .icon:hover span{
-  color: #fff;
-}
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before{
-  background:#3B5999;
-}
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
-  background:#46C1F6;
-}
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
-  background:#333;
-}
-.wrapper .youtube:hover span,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip:before{
-  background:#de463b;
-}
+
+/* Circle */
 
 
 
@@ -128,27 +73,9 @@ layout: home
 
     <br>
 
-
-
-<div class="wrapper">
-    <div class="icon facebook">
-      <div class="tooltip">Facebook</div>
-      <span><i class="fab fa-facebook-f"></i></span>
-    </div>
-  
-    <div class="icon twitter">
-      <div class="tooltip">Twitter</div>
-      <span><i class="fab fa-twitter"></i></span>
-    </div>
-<div class="icon github">
-      <div class="tooltip">github</div>
-      <span><i class="fab fa-github"></i></span>
-    </div>
-<div class="icon youtube">
-      <div class="tooltip">YouTube</div>
-      <span><i class="fab fa-youtube"></i></span>
-    </div>
-</div>
+<a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
     
 
 
