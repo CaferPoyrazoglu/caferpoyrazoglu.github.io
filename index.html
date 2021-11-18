@@ -5,9 +5,9 @@ layout: home
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
     .fa {
       padding: 9px;
@@ -19,62 +19,80 @@ layout: home
       text-decoration: none !important;
       background: #333;
       color: white;
-
-
     }
 
     .center {
       text-align: center;
-
     }
 
 
 
-/* Wrapper */
-.icon-button {
-	background-color: white;
-	border-radius: 3.6rem;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 2.0rem;
-	height: 3.6rem;
-	line-height: 3.6rem;
-	margin: 0 5px;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 3.6rem;
-}
+    ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
-/* Circle */
+    ul li {
+      list-style: none;
+    }
 
+    ul li a {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      display: block;
+      text-align: center;
+      margin: 0 10px;
+      border-radius: 50%;
+      padding: 6px;
+      box-sizing: border-box;
+      text-decoration: none;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(0deg, #ddd, #fff);
+      transition: .5s;
+    }
 
+    ul li a:hover {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+    }
 
+    ul li a .fab {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(0deg, #fff, #ddd);
+      border-radius: 50%;
+      line-height: calc(60px - 12px);
+      font-size: 24px;
+      color: #262626;
+      transition: .5s;
+    }
 
   </style>
 </head>
 
 <body>
   <div class="center">
-
     <img src="https://raw.githubusercontent.com/CaferPoyrazoglu/caferpoyrazoglu.github.io/main/_images/profile.jpg"
-      alt="Avatar" style="border-radius: 50%; width: 100px;">
-    <br>
+      alt="Avatar" style="border-radius: 50%; width: 100px" />
 
-    <br>
 
-<a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-    
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
 
 
   </div>
-
-
 </body>
 
 </html>
