@@ -5,6 +5,8 @@ author:
 
 show_excerpts: false
 
+default_locale: "tr"
+
 minima:
   date_format: "%b %-d, %Y"
 
