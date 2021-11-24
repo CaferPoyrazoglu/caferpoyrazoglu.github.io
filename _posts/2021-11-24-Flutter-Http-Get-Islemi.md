@@ -3,9 +3,6 @@ layout: post
 title: "Flutter - http ile Get İşlemi"
 categories: misc
 ---
-
-## Flutter - http ile Get İşlemi
-
 **JSON**
 
 ```json
