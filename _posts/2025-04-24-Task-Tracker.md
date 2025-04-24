@@ -1,5 +1,9 @@
 Proje detayları için [Task-Tracker](https://roadmap.sh/projects/task-tracker)
 
+Kaynak [Github](https://github.com/CaferPoyrazoglu/Task-Tracker)
+
+Kullanılan Programlama Dili: **Java**
+
 ----------
 
 Task Tracker adında yeni bir proje oluşturup **cli**, **model**, **repository**, **service** ve **util** dizinlerini oluşturalım.
